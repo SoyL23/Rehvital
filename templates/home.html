@@ -1,0 +1,394 @@
+{%extends 'layout.html'%}
+
+{% block tittle %}
+Rehvital IPS
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="img/icon_lg.png" alt="Logo navbar" id="logo_navbar">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home
+                        <span class="visually-hidden">(current)</span>
+                    </a>
+                </li>
+                <!--
+          <li class="nav-item d-none">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item d-none">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item d-none">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Rehvital IPS</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Servicios</a>
+                        <a class="dropdown-item" href="#">Contacto</a>
+                        <a class="dropdown-item" href="#">Quienes Somos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">P.P.S.S.</a>
+                    </div>
+                </li>
+            </ul>
+            <!--
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        -->
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+{%block main%}
+
+<div class="col-12 col-lg-12 col-md-12 col-sm-12 bg-secondary">
+    <div class="p-5">
+        <a href="">
+            <img src="img/banner.png" alt="banner" class="img-fluid p-2" id="banner">
+        </a>
+    </div>
+</div>
+
+<div class="container-fluid" id="servicios">
+    <div class="row justify-content-evenly align-items-center bg-primary p-4 flex-wrap">
+        <h1 class="text-white text-center p-4">Nuestros Servicios</h1>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="p-1">
+                <p class="text-center">
+                    <img src="img/fisioterapia.png" alt="fisioterapia" class="img-fluid p-2" id="fisioterapia">
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="">
+                <div class="p-2">
+                    <h2 class="text-white text-center">
+                        Fisioterapia: <br> Recupera tu bienestar con nuestros especialistas
+                    </h2>
+                </div>
+                <div class="">
+                    <p class="text-white">
+                        La fisioterapia es una disciplina de la salud que se encarga de la prevención,
+                        tratamiento y rehabilitación de las alteraciones del movimiento y la función física.<br>
+                        Nuestros fisioterapeutas están altamente cualificados para ayudar a las personas a
+                        recuperar su salud y bienestar, mejorando su calidad de vida.
+                    </p>
+                    <p class="text-white">
+                        Nuestros fisioterapeutas utilizan una variedad de técnicas, como ejercicios, terapia
+                        manual y electroterapia, para ayudar a los pacientes a recuperar su función física.
+                        Pueden tratar una amplia gama de afecciones, desde lesiones musculares y articulares
+                        hasta dolor crónico, enfermedades neurológicas, respiratorias y cardiovasculares. <br>
+                        Si estás buscando una forma de recuperar tu bienestar, no dudes en ponerte en contacto
+                        con nosotros. Nuestros fisioterapeutas te ayudarán a alcanzar tus objetivos
+                        terapéuticos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-4" id="consultaExterna">
+        <div class="col-lg-8 col-md-8 col-sm-12 my-3">
+            <div class="p-2">
+                <div class="">
+                    <h2 class="text-white text-center">
+                        Consulta externa de ortopedia: <br>
+                        Te ayudamos a recuperar tu movilidad
+                    </h2>
+                </div>
+                <div class="">
+                    <p class="text-white">
+                        La consulta externa de ortopedia es una especialidad médica que se encarga de la
+                        prevención, diagnóstico y tratamiento de las enfermedades y lesiones del aparato
+                        locomotor. <br> Nuestros especialistas están altamente cualificados para ayudarte a
+                        recuperar
+                        tu movilidad y mejorar tu calidad de vida.
+                    </p>
+                    <p class="text-white">
+                        nuestros especialistas tratan una amplia gama de afecciones ortopédicas, desde lesiones
+                        musculares y articulares hasta dolor crónico, enfermedades neurológicas, congénitas y
+                        deformidades. <br> Utilizan técnicas como el examen físico y diagnóstico por imágenes,
+                        tratamiento farmacológico, rehabilitación física y cirugía ortopédica.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="p-1">
+                <p class="text-center">
+                    <img src="img/ortopedia.jpg" alt="fisioterapia" class="img-fluid p-2" id="fisioterapia">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="quienesSomos">
+    <div class=" row container-fluid m-2 p-2">
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="text-primary text-center m-2 p-2">
+                <h1>¿Quienes Somos?</h1>
+                <h2> Rehvital IPS®</h2>
+            </div>
+            <div class="">
+                <p class="">
+                    Rehvital IPS, es una institución prestadora de servicios de salud de primer nivel de
+                    complejidad, ubicada en la ciudad de Cartagena de Indias, la cual cuenta con un equipo
+                    humano especializado y comprometido con la recuperación oportuna de sus usuarios. Nos
+                    especializamos en el área de la ortopedia y rehabilitación, ofrecemos servicios en consulta
+                    externa de ortopedia, traumatología y fisioterapia.
+                    Nuestro compromiso es su salud y bienestar, para tal fin nuestro modelo institucional cumple
+                    con los estándares de calidad requeridos para garantizar la prestación del servicio.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row container-fluid m-2 p-2 bg-primary">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <div class="text-white text-center m-2 p-2">
+                <h2>
+                    Misión
+                </h2>
+            </div>
+            <div class="">
+                <p class="text-white">
+                    Somos una institución prestadora de servicios de salud enfocado en la rehabilitación física
+                    y ortopedia, basados en el principio de crecimiento continuo, trabajo en equipo, buscando
+                    siempre satisfcer las necesidades de la población atendida en el distrito de Cartagena, con
+                    el compromiso de brindar una atención con calidad, eficacia y eficiencia
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+            <div class="text-white text-center m-2 p-2">
+                <h2>
+                    Visión
+                </h2>
+            </div>
+            <div class="">
+                <p class="text-white">
+                    Ser en el 2025 una institución líder en la prestación de servicios de ortopedia y
+                    rehabilitación física a nivel regional con servicios de mediana complejidad en la consulta
+                    externa reconocida por su excelencia, calidad, responsabilidad y valores para satisfacer las
+                    necesidades del paciente, su familia y la comunidad.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row container-fluid m-2 p-2">
+        <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+            <div class="m-2 p-2">
+                <img class="img-fluid m-3 pt-5" src="img/PDP-Icon.png">
+            </div>
+        </div>
+        <div class="col-12 col-lg-9 col-md-12 col-sm-12">
+            <div class="text-primary text-center m-2 p-2">
+                <h2>Política De Seguridad Del Paciente</h2>
+            </div>
+            <div class="px-lg-5 m-4">
+                <p>
+                    En Rehvital IPS y por medio de nuestra política de serguridad del paciente desarrollamos
+                    medidas de seguridad y bioseguridad, para prevenir los riesgos, detectar y corregir posibles
+                    incidentes y evitar eventos adversos que puedan atentar contra la integridad de la persona
+                    atendidad y afectar la calidad de los servicios prestados a clientes internos y externos a
+                    traves de una cultura institucional enfocada en la prevención del riesgo mediante
+                    estrategias que fomenten la deteccion oportuna y la realización de medidas preventivas y/o
+                    correctivas que garanticen un entorno y una práctica segura en la prestación de los
+                    servicios.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row container-fluid m-2 p-2">
+        <div class="col-12 col-lg-9 col-md-12 col-sm-12">
+            <div class="text-primary text-center m-2 p-2">
+                <h2>Políticas de Calidad</h2>
+            </div>
+            <div class="px-lg-5 m-4">
+                <p>
+                    Nuestro compromiso es la prestación de servicios de salud con calidad, oportunidad,
+                    eficiencia y eficacia, con un recurso humano capacitado y con tecnología de vanguardia,
+                    teniendo siempre en cuenta las necesidades de nuestros usuarios, basados en la política del
+                    mejoramiento continuo de nuestros procesos, guardando la confianza y confidencialidad para
+                    lograr la satisfacción de nuestros clientes internos y externos.
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+            <div class="m-2 p-2">
+                <img class="img-fluid m-1 pt-5" src="img/PDC-Icon.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="ppss">
+    <div class="py-3">
+        <h1 class="text-primary text-center">Rehvital, contigo.</h1>
+        <h4 class="text-primary text-center">Política de Participación Social en Salud (PPSS)
+            <br>Resolucion 2063 de 2017
+        </h4>
+    </div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-bs-toggle="tab" href="#contigo" aria-selected="true" role="tab">Rehvital,
+                contigo</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="#actividades" aria-selected="false" role="tab"
+                tabindex="-1">Actividades</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="#docs" aria-selected="false" role="tab"
+                tabindex="-1">Documentos</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active show" id="contigo" role="tabpanel">
+            <div class="container d-flex justify-content-evenly align-items-center my-5">
+                <div class="card col-3 cristal ho">
+                    <img class="img-fluid p-2 img_cristal" src="img/invitacion.png" alt="">
+                </div>
+                <div class="card col-3 cristal ho">
+                    <img class="img-fluid p-2 img_cristal" src="img/autocuidado.png" alt="">
+                </div>
+                <div class="card col-3 cristal ho">
+                    <img class="img-fluid p-2 img_cristal" src="img/invitation.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="actividades" role="tabpanel">
+            <div class="container d-flex justify-content-around align-items-center my-5">
+                <div class="card col-3 cristal ho">
+                    <img class="img-fluid p-2 img_cristal" src="img/capacitacion_1.jpeg" alt="">
+                </div>
+                <div class="card col-3 cristal ho">
+                    <img class="img-fluid p-2 img_cristal" src="img/capacitacion_2.jpeg" alt="">
+                </div>
+                <div class="card col-3 cristal ho">
+                    <img class="img-fluid p-2 img_cristal" src="img/Jornada_1.jpg" alt="">
+                </div>
+                <div class="card col-3 cristal ho">
+                    <img class="img-fluid p-2 img_cristal" src="img/Jornada_2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="docs" role="tabpanel">
+            <div class="row container-fluid m-1 p-2">
+                <div class="col-12 col-lg-10 col-md-10 col-sm-10">
+                    <p>Elección de Líder PPSS Acta N° 1</p>
+                </div>
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <a
+                        href="https://drive.google.com/file/d/1BZBsle5UyVhXaz1Z1Ow4T5jxt8K1UJAM/view?usp=share_link">Descarga</a>
+                </div>
+            </div>
+            <div class="row container-fluid m-1 p-2">
+                <div class="col-12 col-lg-10 col-md-10 col-sm-10">
+                    <p>Definicion de Presupuesto PPSS Acta N° 2</p>
+                </div>
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2">
+                    <a
+                        href="https://drive.google.com/file/d/11MlSrdbHdUwaZDnjAJxm8hnKi3EW3yUD/view?usp=share_link">Descarga</a>
+                </div>
+            </div>
+            <div class="row container-fluid m-1 p-2">
+                <div class="col-12 col-lg-10 col-md-10 col-sm-10">
+                    <p>Oficio Elección de Líder</p>
+                </div>
+                <div class="col-12 col-lg-2 col-md-2 col-sm-2">
+                    <a
+                        href="https://drive.google.com/file/d/12f3rYa0uDTqzEP-wu6pzYFFLoWnR7mJs/view?usp=share_link">Descarga</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="contacto">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-stretch justify-content-center my-2">
+            <div class="container d-flex justify-content-start align-items-center">
+                <div class="col-2 d-flex justify-content-center align-items-center py-3">
+                    <img src="img/medical_icon.png" class="img-fluid p-1">
+                </div>
+                <div class="col-10 d-flex justify-content-start align-items-center py-3">
+                    <p class="text-white">Rehvital IPS®</p>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-start align-items-center my-2">
+                <div class="col-2 d-flex justify-content-center align-items-center my-2">
+                    <img src="img/horario.png" class="img-fluid">
+                </div>
+                <div class="col-10 d-flex justify-content-start align-items-center my-2">
+                    <p class="text-white p-1">Lunes a Sábado 8 am. - 5 pm.</p>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-start align-items-center my-2">
+                <div class="col-2 d-flex justify-content-center align-items-center my-2">
+                    <img src="img/direction.png" class="img-fluid">
+                </div>
+                <div class="col-10 d-flex justify-content-start align-items-center my-2">
+                    <p class="text-white p-1">Br Tesca Viejo Mz N L10 Cartagena, Bolívar</p>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-start align-items-center my-2">
+                <div class="col-2 d-flex justify-content-center align-items-center my-2">
+                    <img src="img/mobilephone.png" class="img-fluid">
+                </div>
+                <div class="col-10 d-flex justify-content-start align-items-center my-2">
+                    <p class="text-white p-1">Tel: 605 636 1612</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-start align-items-center">
+            <iframe class=""
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1962.0825357790054!2d-75.50237814217019!3d10.408460998142958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625bcd0fbdf05%3A0xf2664fb44404c479!2sCl.%2031d%20%2350-30%2C%20Cartagena%20de%20Indias%2C%20Provincia%20de%20Cartagena%2C%20Bol%C3%ADvar!5e0!3m2!1ses-419!2sco!4v1655673557463!5m2!1ses-419!2sco"
+                style="border:0; height:350px; width: 85%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade,"></iframe>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-start align-items-center">
+            <img src="img/icon_lg.png" alt="Logo Rehvital" class="img-fluid" id="logo_footer">
+        </div>
+    </div>
+</div>
+
+{%endblock%}
+{{super()}}
+
+{% block footer %}
+<div class="container-fluid py-3 bg-primary">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Contactos</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+        </li>
+    </ul>
+    <p class="text-center text-body-secondary">Rehvital IPS © 2023</p>
+</div>
+{% endblock %}
